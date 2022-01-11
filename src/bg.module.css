@@ -1,0 +1,20 @@
+.root {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  color: #f8f8f8;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  filter: blur(6px);
+}
+
+.fwIcon {
+  min-width: 1200px;
+  min-height: 1000px;
+  fill: currentColor;
+  vertical-align: middle;
+}

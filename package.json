@@ -1,0 +1,57 @@
+{
+  "name": "jira-graph-view",
+  "version": "0.0.0",
+  "engines": {
+    "node": ">=16"
+  },
+  "description": "",
+  "scripts": {
+    "dev": "concurrently \"vite\" \"node server/server.mjs\"",
+    "build": "vite build --outDir server/public",
+    "prettier": "prettier . --write",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "*": "prettier --write"
+  },
+  "dependencies": {
+    "@antv/algorithm": "^0.1.13",
+    "@antv/g6": "^4.3.11",
+    "@antv/graphin": "^2.4.3",
+    "@antv/graphin-components": "^2.4.0",
+    "@antv/graphin-icons": "^1.0.0",
+    "@types/lodash": "^4.14.176",
+    "@types/node": "^16.11.6",
+    "@types/react": "^17.0.34",
+    "@types/react-dom": "^17.0.11",
+    "@typescript-eslint/eslint-plugin": "^5.3.0",
+    "@typescript-eslint/parser": "^5.3.0",
+    "@vitejs/plugin-react": "^1.0.7",
+    "classnames": "^2.3.1",
+    "comlink": "^4.3.1",
+    "compression": "^1.7.4",
+    "concurrently": "^6.3.0",
+    "datascript": "^1.2.10",
+    "eslint": "^8.1.0",
+    "eslint-plugin-react": "^7.26.1",
+    "eslint-plugin-react-hooks": "^4.2.1-alpha-5cccacd13-20211101",
+    "fastify": "^3.23.0",
+    "fastify-http-proxy": "^6.2.1",
+    "fastify-static": "^4.5.0",
+    "http": "^0.0.1-security",
+    "husky": "^7.0.4",
+    "jotai": "^1.4.2",
+    "linkedom": "^0.13.0",
+    "lint-staged": "^11.2.6",
+    "lodash": "^4.17.21",
+    "pino": "^7.1.0",
+    "pino-pretty": "^7.2.0",
+    "prettier": "^2.4.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "swr": "^1.0.1",
+    "typescript": "^4.4.4",
+    "undici": "^4.9.5",
+    "vite": "~2.5.0"
+  }
+}
